@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CandleAppetite — Intimate Candlelight Gastronomy & Sommelier Dining</title>
+  <meta name="description" content="Experience bespoke multi-course evening dining illuminated by virgin beeswax candlelight. Fine dining culinary craft, Grand Cru cellar pairings, and 1800K atmospheric intimacy.">
+  <link rel="canonical" href="https://candleappetite.com/index.html">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LY0HY7L01');
+  </script>
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold);">
+          <path d="M12 2c-.5 2.5-2 4.5-2 7a4 4 0 0 0 8 0c0-2.5-1.5-4.5-2-7z"></path>
+          <path d="M10 17v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4"></path>
+          <path d="M7 21h10"></path>
+        </svg>
+        <span>CANDLEAPPETITE</span>
+        <span class="brand-badge">GASTRONOMY</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="desktop-nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html" class="">Philosophy</a></li>
+          <li><a href="index.html#tasting">Tasting Menu</a></li>
+          <li><a href="index.html#sommelier">Cellar &amp; Wine</a></li>
+          <li><a href="blog/index.html" class="">Journal</a></li>
+          <li><a href="contact.html" class="">Reservations</a></li>
+          <!-- Desktop hidden policy items -->
+          <li class="nav-item-policy"><a href="privacy-policy.html">Privacy</a></li>
+          <li class="nav-item-policy"><a href="terms-and-conditions.html">Terms</a></li>
+          <li class="nav-item-policy"><a href="disclaimer.html">Disclaimer</a></li>
+          <li class="nav-item-policy"><a href="cookie-policy.html">Cookies</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn" aria-label="Search culinary monographs">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd style="font-family: var(--font-mono); font-size: 0.7rem; background: rgba(255,255,255,0.1); padding: 0.1rem 0.35rem; border-radius: 3px;">⌘K</kbd>
+        </button>
+        <a href="index.html#calculator" class="btn-dining btn-primary">Pairing Matrix</a>
+        <button type="button" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div style="font-weight: 800; color: var(--text-primary); font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-serif);">
+        <span style="color: var(--accent-gold);">CA</span> GASTRONOMY
+      </div>
+      <button type="button" class="mobile-drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html" class="">Culinary Philosophy</a></li>
+      <li><a href="index.html#tasting">Tasting Menu</a></li>
+      <li><a href="index.html#sommelier">Cellar &amp; Wine Pairings</a></li>
+      <li><a href="index.html#calculator">Interactive Sommelier</a></li>
+      <li><a href="blog/index.html" class="">Gastronomy Monographs</a></li>
+      <li><a href="contact.html" class="">Table Reservations</a></li>
+      <li style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);"><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="disclaimer.html">Allergen &amp; Dining Disclaimer</a></li>
+      <li><a href="cookie-policy.html">Cookie Preferences</a></li>
+    </ul>
+  </aside>
+
+  <!-- Search Modal -->
+  <div class="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold);">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="search-modal-input" placeholder="Search tasting courses, cellar vintages, candlelight physics..." aria-label="Search query input">
+        <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">ESC to close</span>
+      </div>
+      <div class="search-modal-results"></div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <div class="hero-eyebrow">
+            <span style="display: inline-block; width: 8px; height: 8px; background: var(--accent-gold); border-radius: 50%;"></span>
+            Intimate Evening Gastronomy
+          </div>
+          <h1 class="hero-title">Where The Flicker Of The Flame <span>Awakens Appetite</span></h1>
+          <p class="hero-desc">
+            CandleAppetite orchestrates multi-course evening dinner rituals illuminated exclusively by virgin beeswax candlelight. Blending classical French culinary foundations with avant-garde flavor extraction, heirloom seasonal terroir, and Grand Cru cellar pairings.
+          </p>
+
+          <div class="hero-stats-row">
+            <div>
+              <div class="hero-stat-val">1,800 K</div>
+              <div class="hero-stat-label">Flame Color Temp</div>
+            </div>
+            <div>
+              <div class="hero-stat-val">7 Courses</div>
+              <div class="hero-stat-label">Tasting Journey</div>
+            </div>
+            <div>
+              <div class="hero-stat-val">1,200+</div>
+              <div class="hero-stat-label">Estate Cellar Labels</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#tasting" class="btn-dining btn-primary">Discover The Tasting Menu</a>
+            <a href="#sommelier" class="btn-dining btn-outline">Explore Cellar Reserves</a>
+          </div>
+        </div>
+
+        <div class="hero-media-wrapper">
+          <img src="assets/images/candlelight-dining-hero-banner.jpg" alt="Candlelight fine dining table setting with crystal glasses and gourmet dish" width="1100" height="700">
+          <div class="hero-media-tag">
+            <strong>THE SALON PRIVÉ</strong> // 100% Virgin Beeswax Luminescence
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Culinary Pillars & Sensory Science -->
+    <section class="section-wrapper" id="pillars">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Sensory Architecture</span>
+          <h2>The Four Tenets Of Candlelight Dining</h2>
+          <p class="section-lead">Dining is not merely the consumption of calories; it is a multisensory symphony where ambient lumens, acoustic resonance, and culinary chemistry converge.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <img src="assets/images/intimate-table-setting-candlelight.jpg" alt="Romantic intimate candlelight dinner table with taper candles" class="feature-card-img">
+            <span class="feature-tag">Luminescent Psychology</span>
+            <h3>1,800 Kelvin Warm Spectrum</h3>
+            <p>Candlelight eliminates high-frequency blue light, triggering parasympathetic nervous system relaxation. Pupillary dilation softens depth perception, focusing conscious attention entirely onto aromatic nuances and companionship.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/images/fine-dining-culinary-plating.jpg" alt="Artisan culinary plating with microgreens and emulsions" class="feature-card-img">
+            <span class="feature-tag">Gastronomic Precision</span>
+            <h3>Micro-Seasonal Terroir</h3>
+            <p>We forge direct alliances with biodynamic farms, coastal day-boat divers, and subterranean truffle foragers. Ingredients harvested within thirty kilometers arrive in our kitchen within six hours of harvesting.</p>
+          </div>
+
+          <div class="feature-card">
+            <img src="assets/images/sommelier-wine-decanting-cellar.jpg" alt="Sommelier decanting vintage red wine into crystal decanter" class="feature-card-img">
+            <span class="feature-tag">Oenological Mastery</span>
+            <h3>Dynamic Decanting Kinetics</h3>
+            <p>Vintage Grand Cru wines are aerated using geometric crystal carafes, orchestrating controlled oxygen dissolution to soften polymeric tannins while preserving delicate volatile anthocyanin bouquets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: The 7-Course Candlelight Tasting Menu -->
+    <section class="section-wrapper" id="tasting">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Autumn / Winter Nocturne</span>
+          <h2>The 7-Course Candlelight Tasting Menu</h2>
+          <p class="section-lead">An unbroken narrative of sensory crescendo, moving from bracing ocean salinity to deep volcanic earthiness and molten cocoa warmth.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Course 1 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="menu-badge">Course 01 // Prelude</span>
+              <img src="assets/images/seared-scallops-caviar-starter.jpg" alt="Hokkaido diver scallops with royal osetra caviar starter">
+            </div>
+            <div class="menu-body">
+              <h3>Hokkaido Diver Scallop</h3>
+              <p>Hand-dived coastal scallops seared on plancha, crowned with Royal Osetra caviar and a champagne velouté infused with finger lime pearls.</p>
+              <ul class="menu-specs-list">
+                <li><span>Dominant Note</span><span>Saline &amp; Citrus Brioche</span></li>
+                <li><span>Cellar Pairing</span><span>2015 Dom Pérignon Brut</span></li>
+                <li><span>Temperature</span><span>48°C Plated Core</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="menu-badge">Course 03 // Earth</span>
+              <img src="assets/images/truffle-handmade-pasta-plate.jpg" alt="Handmade tajarin pasta shaved black winter truffles">
+            </div>
+            <div class="menu-body">
+              <h3>30-Yolk Tajarin &amp; Black Truffle</h3>
+              <p>Silken hand-cut Piedmontese pasta tossed in mountain churned cultured butter, 36-month Parmigiano-Reggiano, and shaved Norcia black truffles.</p>
+              <ul class="menu-specs-list">
+                <li><span>Dominant Note</span><span>Forest Floor &amp; Umami</span></li>
+                <li><span>Cellar Pairing</span><span>2018 Barolo Monprivato</span></li>
+                <li><span>Temperature</span><span>62°C Velvety Emulsion</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <span class="menu-badge">Course 05 // Apex</span>
+              <img src="assets/images/aged-wagyu-beef-entree.jpg" alt="A5 Miyazaki wagyu beef striploin with bone marrow jus">
+            </div>
+            <div class="menu-body">
+              <h3>Miyazaki A5 Wagyu Striploin</h3>
+              <p>Binchotan charcoal-grilled over Japanese white oak, roasted sunchoke mousseline, and a 72-hour roasted veal shank bone marrow reduction.</p>
+              <ul class="menu-specs-list">
+                <li><span>Dominant Note</span><span>Caramelized Pyrolysis &amp; Fat</span></li>
+                <li><span>Cellar Pairing</span><span>2016 Château Margaux</span></li>
+                <li><span>Temperature</span><span>54°C Medium-Rare</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Sommelier Cellar & Wine Decanting Science -->
+    <section class="section-wrapper" id="sommelier">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <span class="section-eyebrow">Grand Cru Cellar</span>
+            <h2>Thermodynamic Decanting &amp; Tannic Physics</h2>
+            <p>Great wine is alive. Trapped inside a sealed glass bottle for twenty years, complex phenolic compounds and condensed tannins exist in an anaerobic equilibrium. Once uncorked, introducing controlled atmospheric oxygen transforms the liquid through selective oxidation.</p>
+            <p>Our Head Sommelier calibrates aeration time using wide-bottomed crystal decanters that maximize the fluid surface-to-volume ratio. As wine spirals down the neck, boundary-layer turbulence dissolves ambient oxygen, stripping away reductive hydrogen sulfides and allowing delicate esters of dark cherry, violet, and cigar box cedar to blossom.</p>
+            <div style="background: rgba(245, 158, 11, 0.08); border-left: 3px solid var(--accent-gold); padding: 1.25rem 1.5rem; margin-top: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+              <strong style="color: var(--accent-gold); display: block; margin-bottom: 0.5rem; font-family: var(--font-mono);">The Anthocyanin-Tannin Condensation Reaction:</strong>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Aeration accelerates the co-pigmentation of monomeric catechins with anthocyanin pigment molecules, creating stable polymeric complexes that eliminate tongue-drying astringency, leaving a seamless velvety finish across the palate.
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-media-wrapper">
+            <img src="assets/images/vintage-wine-pairing-glasses.jpg" alt="Fine dining wine glasses illuminated by candlelight" width="900" height="600">
+            <div class="hero-media-tag">
+              <strong>CELLAR RESERVE</strong> // Over 1,200 Temperature-Controlled Vintages
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Sensory Flavor Pairing Matrix -->
+    <section class="section-wrapper" id="matrix">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Oenological Chemistry</span>
+          <h2>Sensory Flavor Harmonization Matrix</h2>
+          <p class="section-lead">A scientific breakdown of how organic acids, lipids, and polyphenols interact on the human palate during dinner.</p>
+        </div>
+
+        <div class="pairing-table-wrap">
+          <table class="pairing-table">
+            <thead>
+              <tr>
+                <th>Dinner Course</th>
+                <th>Culinary Profile</th>
+                <th>Primary Food Acid/Lipid</th>
+                <th>Selected Cellar Vintage</th>
+                <th class="highlight-col">Sensory Interaction Mechanism</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hokkaido Scallop</strong></td>
+                <td>Sweet oceanic brine, rich caviar</td>
+                <td>Oleic acid, marine triglycerides</td>
+                <td>2015 Dom Pérignon Brut</td>
+                <td class="highlight-col">Carbonic acid scrub lifts heavy butter richness</td>
+              </tr>
+              <tr>
+                <td><strong>Black Truffle Tajarin</strong></td>
+                <td>Earthy musk, aged dairy umami</td>
+                <td>Glutamic acid, butyric lipids</td>
+                <td>2018 Barolo Monprivato</td>
+                <td class="highlight-col">Polymeric Nebbiolo tannins bind dairy proteins</td>
+              </tr>
+              <tr>
+                <td><strong>Spiced Duck Breast</strong></td>
+                <td>Game fowl, dark plum reduction</td>
+                <td>Palmitic fatty acids, malic acid</td>
+                <td>2017 Hermitage Rouge (Syrah)</td>
+                <td class="highlight-col">Rotundone sesquiterpenes mirror spiced reduction</td>
+              </tr>
+              <tr>
+                <td><strong>Miyazaki A5 Wagyu</strong></td>
+                <td>Intense intramuscular marbling</td>
+                <td>Stearic &amp; oleic saturated fats</td>
+                <td>2016 Château Margaux (Cabernet)</td>
+                <td class="highlight-col">Gallotannins emulsify dense wagyu marbling</td>
+              </tr>
+              <tr>
+                <td><strong>Chocolate Fondant</strong></td>
+                <td>72% Venezuelan dark cocoa</td>
+                <td>Theobromine, cocoa butter lipids</td>
+                <td>1994 Graham's Vintage Port</td>
+                <td class="highlight-col">Residual grape sugars balance dark theobromine bitterness</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Candlelight Luminescence & Flame Optics -->
+    <section class="section-wrapper" id="ambiance">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-media-wrapper">
+            <img src="assets/images/brass-candelabra-linen-runners.jpg" alt="Brass candelabras with taper candles on raw linen runners" width="900" height="600">
+            <div class="hero-media-tag">
+              <strong>BLACK BODY RADIATION</strong> // Zero Blue-Light Distraction
+            </div>
+          </div>
+
+          <div class="hero-text-col">
+            <span class="section-eyebrow">Atmospheric Optics</span>
+            <h2>The Science Of Candlelight Illumination</h2>
+            <p>Artificial electric lighting—even modern 2700K warm LEDs—emits unnatural spectral spikes that signal daytime alertness to the human suprachiasmatic nucleus. In contrast, an open candle flame radiates pure incandescent black-body thermal radiation centered at approximately 1,800 Kelvin.</p>
+            <p>This gentle amber glow suppresses cortisol secretion while stimulating melatonin synthesis, inducing an innate psychological state of intimacy, tranquility, and safety known in northern European culinary culture as <em>hygge</em>.</p>
+            <ul style="list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--accent-gold); font-weight: 700;">✓</span>
+                <span><strong>100% Raw Forest Beeswax:</strong> Burned without synthetic paraffin or petroleum distillates, releasing subtle negative ions and natural honeyed propolis aromas.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--accent-gold); font-weight: 700;">✓</span>
+                <span><strong>Visual Soft-Focus Phenomenon:</strong> The flickering flame creates dynamic micro-shadows that enhance the perceived 3D texture of handcrafted pottery and glistening reductions.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--accent-gold); font-weight: 700;">✓</span>
+                <span><strong>Acoustic Intimacy:</strong> Soft candlelight naturally encourages dinner guests to lower speech volume, creating an acoustically serene dining room free of harsh ambient clatter.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Interactive Sommelier & Pairing Calculator -->
+    <section class="section-wrapper" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Bespoke Cellar Pairing</span>
+          <h2>The Interactive Dinner Sommelier</h2>
+          <p class="section-lead">Select your focal dinner course and personal palate preference to discover the optimal vintage pairing from our underground cellar.</p>
+        </div>
+
+        <div class="calc-box">
+          <div class="calc-controls">
+            <div class="calc-group">
+              <label for="calc-course">Select Your Dinner Course Focal Point:</label>
+              <select id="calc-course" class="calc-select">
+                <option value="scallop">Hokkaido Diver Scallops &amp; Caviar</option>
+                <option value="duck">Pan-Roasted Spiced Duck Breast</option>
+                <option value="wagyu" selected>Miyazaki A5 Wagyu Striploin</option>
+                <option value="chocolate">72% Dark Chocolate Molten Soufflé</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label for="calc-palette">Select Your Wine Preference Profile:</label>
+              <select id="calc-palette" class="calc-select">
+                <option value="bold" selected>Bold, Structured &amp; Complex (Old World Classics)</option>
+                <option value="delicate">Delicate, Mineral-Driven &amp; Silky (Cool Climate)</option>
+              </select>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+              Pairings are calculated based on acid-lipid neutralization ratios, alcohol thermal weight, and volatile aromatic congruence evaluated across our 1,200 bottle underground cellar.
+            </div>
+          </div>
+
+          <div class="calc-result-panel">
+            <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 0.5rem;">Recommended Cellar Selection</div>
+            <div id="calc-output-pairing" class="calc-pair-output">2018 Barolo Monprivato</div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em; margin-top: 1.5rem; margin-bottom: 0.5rem;">Sommelier Tasting Note</div>
+            <div id="calc-output-notes" style="font-size: 1rem; color: var(--text-secondary); max-width: 320px;">Nebbiolo tannins slice through marbled A5 lipid structures with seamless ease.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Gastronomic Testimonials & Evening Acclaim -->
+    <section class="section-wrapper" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Guest Impressions</span>
+          <h2>Echoes From Our Evening Dinner Tables</h2>
+          <p class="section-lead">Reflections from culinary critics, celebrating couples, and international travelers who have dined beneath our candelabras.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <div style="color: var(--accent-gold); margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 1.25rem;">"The transition from modern urban bustle into CandleAppetite's beeswax-illuminated salon felt like stepping into an 18th-century European salon. The A5 Wagyu paired with aged Bordeaux was transcendent."</p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: var(--text-primary); display: block;">Henrietta Beaulieu</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Epicurean Review International</span>
+              </div>
+              <span class="brand-badge">Paris</span>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div style="color: var(--accent-gold); margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 1.25rem;">"Celebrated our twentieth wedding anniversary in the Private Alcove. The sommelier's pairing of vintage Barolo with the hand-cut tajarin was an unforgettable masterclass in flavor harmony."</p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: var(--text-primary); display: block;">Julian &amp; Claire Vance</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Anniversary Guests</span>
+              </div>
+              <span class="brand-badge">London</span>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div style="color: var(--accent-gold); margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 1.25rem;">"What struck me most was the pacing. In a world of rushed dining, CandleAppetite allows three serene hours to unfold at the pace of melting beeswax. Pure culinary poetry."</p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: var(--text-primary); display: block;">Chef Mateo Aris</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Michelin Starred Restaurateur</span>
+              </div>
+              <span class="brand-badge">San Francisco</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Tableside Flambé & Fire Craft -->
+    <section class="section-wrapper" id="flambe">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <span class="section-eyebrow">Culinary Theater</span>
+            <h2>The Art &amp; Thermodynamics Of Tableside Flambé</h2>
+            <p>At the culmination of the evening, our Maître d' brings the open copper gueridon cart directly to your table. The preparation of our Grand Marnier crêpes and cognac-infused dark chocolate fondant is an exquisite study in flame thermodynamics.</p>
+            <p>When high-proof spirits reach their flash point of $78.3^\circ	ext{C}$, the rising alcohol vapor ignites in a mesmerizing blue-gold bloom. This brief, intense thermal burst rapidly caramelizes exterior surface sugars without scorching underlying delicate custards, imparting deep toasted hazelnut and orange zest notes that cannot be replicated in a standard oven.</p>
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-gold); margin-top: 1.5rem;">
+              Tableside Service: Executed for all dessert courses upon request.
+            </div>
+          </div>
+
+          <div class="hero-media-wrapper">
+            <img src="assets/images/flambeed-dessert-table-side.jpg" alt="Tableside flambé dessert preparation with blue flame in copper pan" width="900" height="600">
+            <div class="hero-media-tag">
+              <strong>GUERIDON CART</strong> // Tableside Cognac Flambé Service
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Sustainable Sourcing & Zero-Waste Gastronomy -->
+    <section class="section-wrapper" id="ethics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Conscious Gastronomy</span>
+          <h2>Regenerative Terroir &amp; Zero-Waste Stewardship</h2>
+          <p class="section-lead">True luxury honors the soil, the sea, and the community that nurtures every ingredient brought to our kitchen.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <span class="feature-tag">100% Organic</span>
+            <h3>Regenerative Farm Alliances</h3>
+            <p>Our heirloom tubers, micro-greens, and stone-ground flours are sourced exclusively from regenerative family farms practicing holistic crop rotation without synthetic pesticides.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-tag">Day-Boat Only</span>
+            <h3>Sustainable Coastal Seafood</h3>
+            <p>We reject industrial bottom-trawling. All seafood is hand-dived or harvested via single-hook day boats operating under strict seasonal quotas that protect marine biodiversity.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-tag">Zero Waste</span>
+            <h3>Closed-Loop Kitchen Composting</h3>
+            <p>All organic kitchen trim is composted on-site and returned to our estate herb garden, while spent beeswax tapers are re-melted and hand-poured into fresh table candles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Dinner Inquiries FAQ Accordion -->
+    <section class="section-wrapper" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Essential Details</span>
+          <h2>Frequently Addressed Dining Inquiries</h2>
+          <p class="section-lead">Everything you need to know regarding seatings, dietary accommodations, cellar corkage, and dress code.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>What is the evening dining duration and seating schedule?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We host two intimate evening dinner seatings: 17:30 and 20:30. The 7-course tasting menu is designed to unfold leisurely over approximately 2.5 to 3 hours. We never double-book tables within a seating window, allowing you to linger over coffee and digestifs without feeling rushed.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Can the tasting menu accommodate vegetarian, vegan, or allergy restrictions?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Our culinary team crafts dedicated plant-based and gluten-free interpretations of our tasting menu. We request that all dietary preferences and severe allergies be communicated at least 48 hours in advance so our chefs can curate tailored reductions and emulsions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>What is the dress code for dinner at CandleAppetite?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We observe an elegant smart-casual to formal evening dress code. Jackets are encouraged for gentlemen, while tailored evening wear is standard. We respectfully request that guests refrain from athletic apparel, shorts, or beach footwear.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>May guests bring rare vintage wines from their personal cellars?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Guests may bring up to two 750ml bottles of collectible vintage wine not currently featured on our cellar list. A corkage fee of $75 per bottle applies, which covers professional sommelier inspection, temperature stabilization, and tableside crystal decanting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-gold);">
+            <path d="M12 2c-.5 2.5-2 4.5-2 7a4 4 0 0 0 8 0c0-2.5-1.5-4.5-2-7z"></path>
+            <path d="M10 17v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4"></path>
+            <path d="M7 21h10"></path>
+          </svg>
+          <span>CANDLEAPPETITE</span>
+        </a>
+        <p>A culinary sanctuary devoted to intimate candlelight gastronomy, multi-sensory flavor physics, estate sommelier pairings, and the timeless art of the evening dinner table.</p>
+        <div style="margin-top: 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-gold);">
+          MICHELIN GUIDE PHILOSOPHY | SLOW FOOD CERTIFIED
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dinner &amp; Cellar</h4>
+        <ul>
+          <li><a href="index.html#tasting">7-Course Tasting Menu</a></li>
+          <li><a href="index.html#sommelier">Estate Cellar Reserves</a></li>
+          <li><a href="index.html#calculator">Interactive Sommelier</a></li>
+          <li><a href="index.html#ambiance">Luminescent Candlelight</a></li>
+          <li><a href="index.html#ethics">Zero-Waste Slow Food</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Culinary Journal</h4>
+        <ul>
+          <li><a href="blog/candlelight-illumination-sensory-gastronomy.html">1800K Candlelight Physics</a></li>
+          <li><a href="blog/wine-decanting-aeration-fluid-dynamics.html">Decanting &amp; Tannin Aeration</a></li>
+          <li><a href="blog/maillard-reaction-protein-searing-flavor.html">Maillard Pyrolysis &amp; Wagyu</a></li>
+          <li><a href="blog/table-setting-ergonomics-crystal-geometry.html">Stemware &amp; Acoustic Resonance</a></li>
+          <li><a href="blog/slow-food-seasonality-truffle-chemistry.html">Seasonality &amp; Truffle Volatiles</a></li>
+          <li><a href="blog/flambe-thermodynamics-alcohol-caramelization.html">Flambé Tableside Thermodynamics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Estate Governance</h4>
+        <ul>
+          <li><a href="about.html">Culinary Heritage</a></li>
+          <li><a href="contact.html">Private Dining Inquiries</a></li>
+          <li><a href="privacy-policy.html">Privacy Governance</a></li>
+          <li><a href="terms-and-conditions.html">Dining Contract Terms</a></li>
+          <li><a href="disclaimer.html">Allergen &amp; Service Policy</a></li>
+          <li><a href="cookie-policy.html">Cookie Architecture</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 CandleAppetite Fine Dining &amp; Gastronomy LLC. All rights reserved.</div>
+      <div>Official Estate Verification: <code style="color: var(--accent-gold); font-family: var(--font-mono);">contact@candleappetite.com</code></div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js?v=1.0"></script>
+</body>
+</html>
